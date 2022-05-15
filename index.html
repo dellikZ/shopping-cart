@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Test</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>Checkout page</h1>
+        <hr class="header-hr">
+    </header>
+    <div class="content">
+        <div class="products-box" id="products-box">
+            <div class="product">
+                <div class="product-left bolded">Mountain Bike</div>
+                <div class="product-right">
+                    <span class="bolded">Price: <span class="item-price" id="item-price" data-value="1">$120.00</span></span>
+                    <div class="product-button button1" id="product-button" data-value="Product">
+                        <button class="add-to-cart-button" id='button1'data-name='Product Number 1'>  
+                            <i class="fa" style="font-size:24px; color: #fff;">&#xf07a;</i>
+                            <span class="add-to-cart-text">Add to cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-left bolded">BMX</div>
+                <div class="product-right">
+                    <span class="bolded">Price: <span class="item-price">$106.89</span></span>
+                        <button class="add-to-cart-button" id="button2">  
+                            <i class="fa" style="font-size:24px; color: #fff;">&#xf07a;</i>
+                            <span class="add-to-cart-text">Add to cart</span>
+                        </button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-left bolded">Kids Bike</div>
+                <div class="product-right">
+                    <span class="bolded">Price: <span class="item-price">$106.89</span></span>
+                    <div class="product-button" id="product-button">
+                        <button class="add-to-cart-button" id="button3">  
+                            <i class="fa" style="font-size:24px; color: #fff;">&#xf07a;</i>
+                            <span class="add-to-cart-text">Add to cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shopping-cart" id="shopping-cart">
+            <p class="has-products" id="has-products">No products in your shopping cart</p>
+            <div class="output-div">
+                <div class="output-div-left">
+                    <span>Product</span>
+                </div>
+                <div class="output-div-right">
+                    <span>Quantity</span>
+                    <span>Value</span></div>
+            </div>
+            <hr class="shopping-cart-hr">
+            <div class="all-products">
+                <div class="product-div-1">
+                    <div class="product-div-left">
+                        <span class="bolded">Mountain Bike</span> <div class="product-info-icon">&#9432;<span class="product-info-text">Made for your wildest hiking dreams!</span></div>
+                    </div>
+                    <div class="product-div-right">
+                        <span><input type="text" class="product-1-input" readonly></span>
+                        <span class="product-1-price">Value</span>
+                    </div>
+                </div>
+                <div class="product-div-2">
+                    <div class="product-div-left">
+                        <span class="bolded">BMX</span> <div class="product-info-icon">&#9432;<span class="product-info-text">This brand new BMX can turn your stunt ideas into reality! </span></div>
+                    </div>
+                    <div class="product-div-right">
+                        <span><input type="text" class="product-2-input" readonly></span>
+                        <span class="product-2-price">Value</span>
+                    </div>
+                </div>
+                <div class="product-div-3">
+                    <div class="product-div-left">
+                        <span class="bolded">Kids bike</span> <div class="product-info-icon">&#9432;<span class="product-info-text">Well, that's just a kids bike...</span></div>
+                    </div>
+                    <div class="product-div-right">
+                        <span><input type="text" class="product-3-input" readonly></span>
+                        <span class="product-3-price">Value</span>
+                    </div>
+                </div>
+            </div>
+           <div class="buffer">
+               <hr class="hr-total-price">
+           </div>
+            <div class="final-price">
+                <span class="result bolded"></span>
+            </div>
+            <button class="continue-button bolded">Continue</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
